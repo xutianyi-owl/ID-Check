@@ -125,11 +125,11 @@ string get_gent(string id)
 	s_i >> gent_check;
 	if (gent_check % 2 == 0)
 	{
-		gent = "Ů";
+		gent = "女";
 	}
 	else
 	{
-		gent == "��";
+		gent == "男";
 	}
 	return gent;
 }
