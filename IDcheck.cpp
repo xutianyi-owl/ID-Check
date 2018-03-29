@@ -48,10 +48,8 @@ using namespace std;
 				cout << get_city(id) << "  ";
 				cout << get_dist(id) << "  ";
 				cout << '\n';
-				/*Bug here?????
 				cout << "性别为:" << '\t';
 				cout << get_gent(id) << '\n';
-				*/
 			}
 			else
 			{
