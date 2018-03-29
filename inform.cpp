@@ -115,7 +115,7 @@ string get_dist(string id)
 	}
 	return dist;
 }
-/*Bug here?????---20180217
+
 string get_gent(string id)
 {
 	string gent = "error";
@@ -129,8 +129,8 @@ string get_gent(string id)
 	}
 	else
 	{
-		gent == "男";
+		gent = "男";
 	}
 	return gent;
 }
-*/
+
