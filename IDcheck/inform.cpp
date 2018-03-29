@@ -1,7 +1,7 @@
 /*
 Part of IDcheck
 IDcheck Copyright XuTianyi
-ĞìÌíÒí °æÈ¨ËùÓĞ
+å¾æ·»ç¿¼ ç‰ˆæƒæ‰€æœ‰
 Github:github.com/xutianyi-owl
 Build on Windows 10 by VS2017
 */
@@ -11,12 +11,12 @@ string city_Code[2][430];
 string dist_Code[2][4536];
 void get_data()
 {
-	/*ÔØÈëÊı¾İÎÄ¼ş£¨Ê¡¡¢ÊĞ¡¢Çø£©*/
+	/*è½½å…¥æ•°æ®æ–‡ä»¶ï¼ˆçœã€å¸‚ã€åŒºï¼‰*/
 	ifstream data_read;
 	data_read.open("prov_Code");
 	if (!data_read)
 	{
-		cout << "Êı¾İÎÄ¼ş¶ªÊ§»òËğ»µ" << '\n';
+		cout << "æ•°æ®æ–‡ä»¶ä¸¢å¤±æˆ–æŸå" << '\n';
 		exit(0);
 	}
 	for (size_t i = 0; i < 34; i++)
@@ -30,7 +30,7 @@ void get_data()
 	data_read.open("city_Code");
 	if (!data_read)
 	{
-		cout << "Êı¾İÎÄ¼ş¶ªÊ§»òËğ»µ" << '\n';
+		cout << "æ•°æ®æ–‡ä»¶ä¸¢å¤±æˆ–æŸå" << '\n';
 		exit(0);
 	}
 	for (size_t i = 0; i < 430; i++)
@@ -44,7 +44,7 @@ void get_data()
 	data_read.open("dist_Code");
 	if (!data_read)
 	{
-		cout << "Êı¾İÎÄ¼ş¶ªÊ§»òËğ»µ" << '\n';
+		cout << "æ•°æ®æ–‡ä»¶ä¸¢å¤±æˆ–æŸå" << '\n';
 		exit(0);
 	}
 	for (size_t i = 0; i < 4536; i++)
@@ -61,7 +61,7 @@ string get_prov(string id)
 {
 	int prov_posi=0;
 	string prov="error";
-	/*»ñÈ¡µØÇø´úÂë£¨Ê¡¼¶£©*/
+	/*è·å–åœ°åŒºä»£ç ï¼ˆçœçº§ï¼‰*/
 	string id_prov_code="xxx";
 	id_prov_code = (id.substr(0, 2));
 	for (size_t i = 0; i < 34; i++)
@@ -80,7 +80,7 @@ string get_city(string id)
 {
 	int city1_posi=0;
 	string city="error";
-	/*»ñÈ¡µØÇø´úÂë£¨ÊĞ¼¶£©*/
+	/*è·å–åœ°åŒºä»£ç ï¼ˆå¸‚çº§ï¼‰*/
 	string id_city_code="xxx";
 	id_city_code = (id.substr(0, 4));
 	for (size_t i = 0; i < 430; i++)
@@ -99,7 +99,7 @@ string get_dist(string id)
 {
 	int dist_posi=0;
 	string dist="error";
-	/*»ñÈ¡µØÇø´úÂë£¨Çø¼¶£©*/
+	/*è·å–åœ°åŒºä»£ç ï¼ˆåŒºçº§ï¼‰*/
 	string id_dist_code="xxx";
 	id_dist_code = (id.substr(0, 6));
 	for (size_t i = 0; i < 4536; i++)
@@ -113,7 +113,7 @@ string get_dist(string id)
 	}
 	return dist;
 }
-/*Bug here?????---20180217
+
 string get_gent(string id)
 {
 	string gent = "error";
@@ -123,12 +123,12 @@ string get_gent(string id)
 	s_i >> gent_check;
 	if (gent_check % 2 == 0)
 	{
-		gent = "Å®";
+		gent = "å¥³";
 	}
 	else
 	{
-		gent == "ÄĞ";
+		gent = "ç”·";
 	}
 	return gent;
 }
-*/
+
